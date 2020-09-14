@@ -2,11 +2,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BARIS KARDAS</title>
+    <title>Barış Kardaş</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <style>
+
 
 body, html {
   height: 100%;
@@ -15,13 +16,12 @@ body, html {
 }
 
 
-
     div.yazilar {
         background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  border: 5px solid #f8e800;
+ 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,8 +33,24 @@ body, html {
   
     }
 
+    div.yazi2 {
+        
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:  2 ;
+  width: 80%;
+  padding: 5px;
+  text-align: center;
+  
+    }
+
+
     a.fa {
-    border: 5px solid white;
+    border: 3px solid white;
     padding: 10px;
     font-size: 30px;
     width: 30px;
@@ -42,14 +58,31 @@ body, html {
     text-decoration: none;
     margin-left: 30px;
     border-radius: 50%;
-    
-    background: rgb(38, 0, 255);
+    background:none;
     color: white;
     }
 
     a.fa:hover{
     opacity: 0.5;
     }
+    
+    .abc{
+    text-decoration: none;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background:none;
+    color: white;
+    }
+
+
+    .abc:hover{
+
+    color:rgb(124, 101, 255);
+    }
+
+    
 
     #backgroundBody{
         background-repeat: no-repeat;
@@ -63,44 +96,17 @@ body, html {
         -webkit-filter: blur(8px);
     }
 
-    #bg2{
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background: url(resim3.jpg);
-        background-size: cover;
-        background-color: none;
-        height: 100%; 
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        
-    }
-
-    #bg3{
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background: url(resim4.jpg);
-        background-size: cover;
-        background-color: none;
-        height: 100%; 
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        
-    }
-
-    #bg4{
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background: url(resim2.jpg);
-        background-size: cover;
-        background-color: none;
-        height: 100%; 
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        
-    }
+    video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
 
 
 
@@ -113,8 +119,8 @@ body, html {
     <div id="backgroundBody"></div>
 
     <div class="yazilar">
-    <h1 style="font-size: 500%;">Barış Kardaş</h1>
-    <p style="font-size: 160%;">Mobile Developer / Web Software Developer</p>
+    <h1 style="font-size: 400%;">Barış Kardaş</h1>
+    <h3>Mobile Developer / Web Software Developer</h3>
     
 
     <div>
@@ -122,16 +128,15 @@ body, html {
         <a href="https://www.linkedin.com/in/bariskardas/" class="fa fa-linkedin" target="_blank" rel="noopener noreferer"></a>
         <a href="https://www.instagram.com/bariskardass/" class="fa fa-instagram" target="_blank" rel="noopener noreferer"></a>
     </div>
+
+    <div><a href="hakkimizda.html" target="_blank" class="abc" ><h3>Hakkımda</h3></a></div>
 </div>
 
+<div>
+<video autoplay loop muted>
+    <source src="video2.mp4" type="video/mp4">
+   </video>
 
-<div id="bg2">
-</div>
-
-<div id="bg3">
-</div>
-
-<div id="bg4">
 </div>
 
     
